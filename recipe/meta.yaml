@@ -1,6 +1,6 @@
 {% set name = "google-cloud-monitoring" %}
-{% set version = "0.28.1" %}
-{% set sha256 = "534d66d97611c9c6e08823532f5144f6786d3a6103a6d5ed6411ac465faa5341" %}
+{% set version = "0.31.0" %}
+{% set sha256 = "61a0f94e4e014f869121b2133c5025f16b9db3985f1de7c7ad4f482012b2124a" %}
 
 package:
   name: {{ name|lower }}
