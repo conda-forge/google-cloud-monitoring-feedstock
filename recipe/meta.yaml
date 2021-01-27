@@ -13,15 +13,19 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
+  noarch: python
 
 requirements:
   build:
     - python
     - setuptools
 
+  host:
+    - pip
+
   run:
-    - python
+    - python >=3.5
     - google-api-core-grpc >=1.14.0,<2.0.0dev
 
 test:
@@ -30,14 +34,13 @@ test:
     - google.cloud.monitoring_v3
 
 about:
-  home: https://github.com/GoogleCloudPlatform/google-cloud-python/tree/master/monitoring
+  home: https://github.com/googleapis/python-monitoring
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Python Client for Google Stackdriver Monitoring'
+  summary: 'Python Client for Stackdriver Monitoring API'
   description: Python idiomatic client for Google Stackdriver Monitoring
-  doc_url: https://googlecloudplatform.github.io/google-cloud-python/stable/monitoring-usage.html
-  dev_url: https://github.com/GoogleCloudPlatform/google-cloud-python/tree/master/monitoring
+  doc_url: https://googleapis.dev/python/monitoring/latest/index.html
 
 extra:
   recipe-maintainers:
