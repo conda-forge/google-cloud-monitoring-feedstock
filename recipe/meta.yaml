@@ -1,6 +1,6 @@
 {% set name = "google-cloud-monitoring" %}
-{% set version = "0.36.0" %}
-{% set sha256 = "ff69ca820fcbbc7881745e5e225e4a5751f8fd6a7efa5c7082fcfab684103df3" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "639408cac9660b6c7c2324bf1b2461c9c8e338518b9ebb7ebfac833a61d753eb" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -35,7 +35,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Python Client for Stackdriver Monitoring API'
+  summary: Python Client for Stackdriver Monitoring API
   description: Python idiomatic client for Google Stackdriver Monitoring
   doc_url: https://googleapis.dev/python/monitoring/latest/index.html
 
