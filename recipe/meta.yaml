@@ -10,7 +10,7 @@ source:
   sha256: 639408cac9660b6c7c2324bf1b2461c9c8e338518b9ebb7ebfac833a61d753eb
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -37,7 +37,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Python Client for Stackdriver Monitoring API'
+  summary: Python Client for Stackdriver Monitoring API
   description: Python idiomatic client for Google Stackdriver Monitoring
   doc_url: https://googleapis.dev/python/monitoring/latest/index.html
 
