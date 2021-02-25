@@ -12,13 +12,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
 
   run:
@@ -29,6 +29,10 @@ test:
   imports:
     - google.cloud.monitoring
     - google.cloud.monitoring_v3
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/googleapis/python-monitoring
@@ -42,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - parthea
+    - xylar
