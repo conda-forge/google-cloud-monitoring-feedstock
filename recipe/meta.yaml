@@ -1,15 +1,13 @@
 {% set name = "google-cloud-monitoring" %}
-{% set version = "0.36.0" %}
-{% set sha256 = "ff69ca820fcbbc7881745e5e225e4a5751f8fd6a7efa5c7082fcfab684103df3" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 639408cac9660b6c7c2324bf1b2461c9c8e338518b9ebb7ebfac833a61d753eb
 
 build:
   number: 1
@@ -18,17 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.5
     - pip
-
+    - python >=3.6
   run:
-    - python >=3.5
-    - google-api-core-grpc >=1.14.0,<2.0.0dev
+    - google-api-core-grpc >=1.22.2,<2.0.0dev
+    - libcst >=0.2.5
+    - proto-plus >=1.4.0
+    - python >=3.6
 
 test:
   imports:
     - google.cloud.monitoring
-    - google.cloud.monitoring_v3
   commands:
     - pip check
   requires:
