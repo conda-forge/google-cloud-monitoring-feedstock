@@ -1,5 +1,5 @@
 {% set name = "google-cloud-monitoring" %}
-{% set version = "2.6.0" %}
+{% set version = "2.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 47feb2e635ef79af98696eb22a5af1db8a78b3a2919e39bdec65ba45659b59ac
+  sha256: 973f33f4da9598a30769e27510fc0cd4470f9081ba694c6c589bb8c0b86a0a6d
 
 build:
   number: 0
@@ -20,8 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - google-api-core-grpc >=1.26.0,<3.0.0dev
-    - packaging >=14.3
+    - google-api-core-grpc >=1.28.0,<3.0.0dev
     - proto-plus >=1.15.0
 
 test:
