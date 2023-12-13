@@ -3,11 +3,11 @@ About google-cloud-monitoring-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-monitoring-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/googleapis/python-monitoring
+Home: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-monitoring
 
 Package license: Apache-2.0
 
-Summary: Python Client for Stackdriver Monitoring API
+Summary: Google Cloud Monitoring API client library
 
 Documentation: https://googleapis.dev/python/monitoring/latest/index.html
 
