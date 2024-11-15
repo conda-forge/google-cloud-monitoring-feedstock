@@ -9,6 +9,8 @@ Package license: Apache-2.0
 
 Summary: Google Cloud Monitoring API client library
 
+Development: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-monitoring
+
 Documentation: https://googleapis.dev/python/monitoring/latest/index.html
 
 Python idiomatic client for Google Stackdriver Monitoring
