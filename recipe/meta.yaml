@@ -1,5 +1,5 @@
 {% set name = "google-cloud-monitoring" %}
-{% set version = "2.25.0" %}
+{% set version = "2.26.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: eed01608f750786804d1769b28ceb0fbdf8cb5f7f793a8e59b7b6376e046ceac
+  sha256: 29041fdffdb2db86c8be545ac985c7490c170e9110b4365f0bd6088c68441884
 
 build:
   noarch: python
