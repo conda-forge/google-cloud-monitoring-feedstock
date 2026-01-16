@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-monitoring
-  version: 2.28.0
+  version: "2.29.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_monitoring-${{ version }}.tar.gz
-  sha256: 25175590907e038add644b5b744941d221776342924637095a879973a7c0ac37
+  sha256: eedb8afd1c4e80e8c62435f05c448e9e65be907250a66d81e6af5909778267b6
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
